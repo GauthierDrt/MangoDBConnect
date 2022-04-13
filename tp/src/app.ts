@@ -5,6 +5,8 @@ import {logger} from './helpers/logger';
 
 const app = express();
 
-app.listen(3000);
+app.listen(3000, ()=>{
+    logger.info("Hallo Welt !");
+    connect();
+});
 
-logger.info("Hallo Welt !");
